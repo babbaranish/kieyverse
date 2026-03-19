@@ -1,6 +1,6 @@
 'use client';
 
-import { Mail, Globe, Linkedin } from 'lucide-react';
+import { Mail, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -23,20 +23,14 @@ export default function Footer() {
               <Mail className="w-4 h-4" />
             </a>
             <a
-              href="https://kieyverse.in"
+              href="https://www.linkedin.com/company/kiey-verse/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white/50 hover:bg-kv-yellow hover:text-kv-black hover:border-kv-yellow transition-all duration-300"
-              aria-label="Website"
-            >
-              <Globe className="w-4 h-4" />
-            </a>
-            <div
-              className="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white/50 hover:bg-kv-yellow hover:text-kv-black hover:border-kv-yellow transition-all duration-300 cursor-pointer"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-4 h-4" />
-            </div>
+            </a>
           </div>
         </div>
 
