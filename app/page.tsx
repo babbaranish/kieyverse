@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import CompanyOverview from "@/components/CompanyOverview";
 import Founders from "@/components/Founders";
 import CoreServices from "@/components/CoreServices";
+import WhyChoose from "@/components/WhyChoose";
 import ServiceTypes from "@/components/ServiceTypes";
 import ClientIndustries from "@/components/ClientIndustries";
 import Clientele from "@/components/Clientele";
@@ -18,6 +19,7 @@ export default function Home() {
       <CompanyOverview />
       <Founders />
       <CoreServices />
+      <WhyChoose />
       <ServiceTypes />
       <ClientIndustries />
       <Clientele />

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, Linkedin, Instagram, Send, CheckCircle, AlertCircle } from 'lucide-react';
 
 export default function Contact() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
@@ -52,8 +52,8 @@ export default function Contact() {
             Reach Out
           </span>
           <h2 className="mt-3 font-[var(--font-display)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-kv-black">
-            Let&apos;s Connect{' '}
-            <span className="text-kv-yellow">With Us!</span>
+            Connect{' '}
+            <span className="text-kv-yellow">with Us</span>
           </h2>
         </motion.div>
 
@@ -99,6 +99,21 @@ export default function Contact() {
                   <p className="font-[var(--font-display)] font-bold text-kv-black">KIEY VERSE HQ</p>
                 </div>
               </a>
+
+              <a
+                href="https://www.instagram.com/kieyverse.hq/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 p-4 bg-white rounded-xl border border-kv-black/5 hover:border-kv-yellow/40 hover:shadow-lg hover:shadow-kv-yellow/5 transition-all duration-300"
+              >
+                <div className="w-12 h-12 bg-pink-50 rounded-xl flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-purple-600 group-hover:to-pink-500 transition-colors duration-300">
+                  <Instagram className="w-5 h-5 text-pink-600 group-hover:text-white transition-colors duration-300" />
+                </div>
+                <div>
+                  <p className="text-xs text-kv-black/40 font-medium uppercase tracking-wider">Instagram</p>
+                  <p className="font-[var(--font-display)] font-bold text-kv-black">@kieyverse.hq</p>
+                </div>
+              </a>
             </div>
           </motion.div>
 
@@ -114,7 +129,7 @@ export default function Contact() {
               className="bg-white rounded-2xl border border-kv-black/5 p-8 shadow-xl shadow-black/[0.03]"
             >
               <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY || ''} />
-              <input type="hidden" name="subject" value="New Contact Form Submission — KIEY VERSE" />
+              <input type="hidden" name="subject" value="New Contact Form Submission – KIEY VERSE" />
               <input type="hidden" name="from_name" value="KIEY VERSE Website" />
               {/* Honeypot spam protection */}
               <input type="checkbox" name="botcheck" className="hidden" />
@@ -177,7 +192,7 @@ export default function Contact() {
                   ) : status === 'error' ? (
                     <>
                       <AlertCircle className="w-4 h-4" />
-                      Failed — Try Again
+                      Failed – Try Again
                     </>
                   ) : (
                     <>

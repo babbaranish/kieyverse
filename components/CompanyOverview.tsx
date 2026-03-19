@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Target, Zap } from 'lucide-react';
+import Image from 'next/image';
 
 export default function CompanyOverview() {
   return (
@@ -12,7 +13,7 @@ export default function CompanyOverview() {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left — Visual */}
+          {/* Left – Visual */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -25,14 +26,9 @@ export default function CompanyOverview() {
               <div className="absolute inset-8 bg-kv-dark rounded-3xl rotate-3 shadow-2xl" />
               <div className="absolute inset-8 bg-kv-black rounded-3xl -rotate-2 shadow-2xl">
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
-                  <div className="font-[var(--font-display)] text-6xl font-extrabold mb-4">
-                    <span className="logo-kiey">KIEY</span>
-                  </div>
-                  <div className="font-[var(--font-display)] text-6xl font-extrabold">
-                    <span className="logo-verse">VERSE</span>
-                  </div>
+                  <Image src="/logo.png" alt="KIEY VERSE" width={200} height={80} className="h-24 w-auto" />
                   <div className="mt-6 w-16 h-1 bg-kv-yellow" />
-                  <p className="mt-4 text-white/40 text-sm text-center">Talent & Digital Growth</p>
+                  <p className="mt-4 text-white/40 text-sm text-center">Manpower & Digital Growth</p>
                 </div>
               </div>
               {/* Yellow accent block */}
@@ -41,7 +37,7 @@ export default function CompanyOverview() {
             </div>
           </motion.div>
 
-          {/* Right — Content */}
+          {/* Right – Content */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}

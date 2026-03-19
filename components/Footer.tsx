@@ -1,6 +1,7 @@
 'use client';
 
-import { Mail, Linkedin } from 'lucide-react';
+import { Mail, Linkedin, Instagram } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -8,10 +9,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <div className="flex items-center gap-1 font-[var(--font-display)] text-xl font-extrabold">
-            <span className="logo-kiey">KIEY</span>
-            <span className="logo-verse">VERSE</span>
-          </div>
+          <Image src="/logo.png" alt="KIEY VERSE" width={130} height={52} className="h-12 w-auto" />
 
           {/* Social links */}
           <div className="flex items-center gap-4">
@@ -31,6 +29,15 @@ export default function Footer() {
             >
               <Linkedin className="w-4 h-4" />
             </a>
+            <a
+              href="https://www.instagram.com/kieyverse.hq/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white/50 hover:bg-kv-yellow hover:text-kv-black hover:border-kv-yellow transition-all duration-300"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
           </div>
         </div>
 
@@ -40,7 +47,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} KIEY VERSE. All rights reserved.
           </p>
           <p className="text-white/20 text-xs">
-            Empowering Businesses with Talent & Digital Growth
+            Empowering Businesses with Manpower & Digital Growth
           </p>
         </div>
       </div>

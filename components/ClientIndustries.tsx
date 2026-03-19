@@ -1,14 +1,15 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Monitor, Landmark, BookOpen, BriefcaseBusiness, Rocket } from 'lucide-react';
+import { Rocket, Factory, Car, BookOpen, ShoppingBag, Building2 } from 'lucide-react';
 
 const industries = [
-  { icon: Monitor, label: 'IT Sector' },
-  { icon: Landmark, label: 'Financial Sector' },
+  { icon: Rocket, label: 'Startups (IT & Non-IT)' },
+  { icon: Factory, label: 'Manufacturing' },
+  { icon: Car, label: 'Automobile' },
   { icon: BookOpen, label: 'EdTech' },
-  { icon: BriefcaseBusiness, label: 'Professional Services' },
-  { icon: Rocket, label: 'Startups & SMEs' },
+  { icon: ShoppingBag, label: 'Retail' },
+  { icon: Building2, label: 'Real Estate' },
 ];
 
 // Duplicate for seamless marquee

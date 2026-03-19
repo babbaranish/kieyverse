@@ -17,16 +17,21 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://kieyverse.in"),
   title: {
-    default:
-      "KIEY VERSE — Skilled Manpower Resourcing & Digital Marketing Services in India",
+    default: "Manpower and Digital Services India | KIEY VERSE",
     template: "%s | KIEY VERSE",
   },
   description:
-    "KIEY VERSE provides skilled manpower resourcing, digital marketing, SEO, social media marketing, business consultation, and digital learning services across India. Women-founded company empowering businesses with talent and digital growth solutions.",
+    "Top manpower agency in Madurai | Best Digital marketing agency in South India. KIEY VERSE provides skilled manpower resourcing, digital marketing, recruitment, SEO, lead generation, and business consultation services across India.",
   keywords: [
     "KIEYVERSE",
     "KIEY VERSE",
     "kieyverse.in",
+    "manpower consultancy in Madurai",
+    "recruitment agency Tamil Nadu",
+    "digital marketing agency India",
+    "lead generation services India",
+    "hiring solutions for startups",
+    "HR consultancy services",
     "digital marketing company India",
     "digital marketing services",
     "manpower resourcing India",
@@ -48,6 +53,8 @@ export const metadata: Metadata = {
     "paid ads management",
     "SEM services",
     "online marketing India",
+    "manpower agency Madurai",
+    "best digital marketing South India",
   ],
   authors: [
     { name: "Vijayalakshmi", url: "https://kieyverse.in" },
@@ -63,30 +70,33 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://kieyverse.in",
   },
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
-    title:
-      "KIEY VERSE — Skilled Manpower Resourcing & Digital Marketing in India",
+    title: "Manpower and Digital Services India | KIEY VERSE",
     description:
-      "Empowering businesses with skilled manpower resourcing, digital marketing, SEO, SMM, business consultation, and digital learning. Women-founded company serving IT, Finance, EdTech, and more across India.",
+      "Top manpower agency in Madurai | Best Digital marketing agency in South India. Empowering businesses with skilled manpower resourcing, digital marketing, SEO, SMM, business consultation, and digital learning.",
     url: "https://kieyverse.in",
     siteName: "KIEY VERSE",
     locale: "en_IN",
     type: "website",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "KIEY VERSE — Empowering Businesses with Talent & Digital Growth",
+        url: "/logo.png",
+        width: 500,
+        height: 500,
+        alt: "KIEY VERSE – Empowering Businesses with Manpower & Digital Growth",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "KIEY VERSE — Talent & Digital Growth Partner",
+    title: "Manpower and Digital Services India | KIEY VERSE",
     description:
-      "Skilled manpower resourcing, digital marketing, business consultation & digital learning services across India.",
-    images: ["/og-image.png"],
+      "Top manpower agency in Madurai | Best Digital marketing agency in South India.",
+    images: ["/logo.png"],
   },
   robots: {
     index: true,
@@ -119,21 +129,26 @@ const jsonLd = {
       url: "https://kieyverse.in",
       email: "kieyverse@gmail.com",
       description:
-        "A dynamic company offering Skilled Manpower Resourcing, Digital Marketing, Business Consultation, and Digital Learning services across India.",
+        "Top manpower agency in Madurai and best digital marketing agency in South India. Offering skilled manpower resourcing, digital marketing, business consultation, and skill development services.",
       foundingDate: "2024",
       founders: [
         { "@type": "Person", name: "Vijayalakshmi", jobTitle: "Co-Founder" },
         { "@type": "Person", name: "Easwary", jobTitle: "Co-Founder" },
       ],
-      sameAs: ["https://www.linkedin.com/company/kiey-verse/"],
+      sameAs: [
+        "https://www.linkedin.com/company/kiey-verse/",
+        "https://www.instagram.com/kieyverse.hq/",
+      ],
       areaServed: { "@type": "Country", name: "India" },
       knowsAbout: [
+        "Manpower Consultancy",
+        "Recruitment Services",
         "Digital Marketing",
         "SEO",
         "Social Media Marketing",
-        "Manpower Resourcing",
+        "Lead Generation",
         "Business Consultation",
-        "Content Writing",
+        "Skill Development",
         "Web Development",
         "Brand Strategy",
       ],
@@ -151,11 +166,11 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://kieyverse.in/#webpage",
       url: "https://kieyverse.in",
-      name: "KIEY VERSE — Skilled Manpower Resourcing & Digital Marketing Services in India",
+      name: "Manpower and Digital Services India | KIEY VERSE",
       isPartOf: { "@id": "https://kieyverse.in/#website" },
       about: { "@id": "https://kieyverse.in/#organization" },
       description:
-        "KIEY VERSE provides skilled manpower resourcing, digital marketing, SEO, social media marketing, business consultation, and digital learning services across India.",
+        "Top manpower agency in Madurai | Best Digital marketing agency in South India.",
     },
     {
       "@type": "ProfessionalService",
@@ -175,36 +190,36 @@ const jsonLd = {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Skilled Talent Supply",
+              name: "Recruitment Services",
               description:
-                "Pre-vetted talent across IT, Non-IT, and creative roles to help companies scale smoothly.",
+                "Fast hiring for IT & Non-IT roles with pre-screened, ready-to-work candidates. Cost-effective hiring solutions with bulk hiring support.",
             },
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Digital Marketing",
+              name: "Digital Marketing Services",
               description:
-                "Complete digital marketing including SMM, paid ads, SEO, content writing, copywriting, and brand growth strategies.",
+                "Lead generation campaigns, social media marketing, performance ads (Meta, Google), SEO optimization, and website development.",
             },
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Business Consultation",
+              name: "Skill Development Programs",
               description:
-                "Strategy, recruitment, branding, and digital transformation support.",
+                "Industry-ready training, placement-focused courses, and practical learning approach.",
             },
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Digital Learning",
+              name: "Business Consultation Services",
               description:
-                "Practical digital courses that enhance skills and industry-ready knowledge.",
+                "Expert guidance to grow your business step by step. Help in hiring, marketing, and overall planning.",
             },
           },
         ],
@@ -219,7 +234,7 @@ const jsonLd = {
           name: "What services does KIEY VERSE offer?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "KIEY VERSE offers four core services: Skilled Talent Supply (pre-vetted IT, Non-IT, and creative talent), Digital Marketing (SMM, paid ads, SEO, content writing, copywriting, brand growth), Business Consultation (strategy, recruitment, branding, digital transformation), and Digital Learning (practical digital courses for skill enhancement).",
+            text: "KIEY VERSE offers four core services: Recruitment Services (fast hiring for IT & Non-IT roles), Digital Marketing Services (lead generation, SMM, performance ads, SEO, web development), Skill Development Programs (industry-ready training), and Business Consultation Services (expert guidance for business growth).",
           },
         },
         {
@@ -227,7 +242,7 @@ const jsonLd = {
           name: "Which industries does KIEY VERSE serve?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "KIEY VERSE serves clients across IT Sector, Financial Sector, EdTech, Professional Services, and Startups & SMEs across multiple regions in India.",
+            text: "KIEY VERSE serves Startups (IT & Non-IT), Manufacturing, Automobile industries, EdTech companies, Retail businesses, and Real Estate businesses across India.",
           },
         },
         {
@@ -235,15 +250,15 @@ const jsonLd = {
           name: "Who founded KIEY VERSE?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "KIEY VERSE was founded by Vijayalakshmi and Easwary — two passionate women entrepreneurs from different states of India with close to 10 years of combined experience in Social Media Marketing, SEO, HR, and Legal expertise.",
+            text: "KIEY VERSE was founded by Vijayalakshmi and Easwary – two passionate women entrepreneurs from different states of India with close to 10 years of combined experience in Social Media Marketing, SEO, HR, and Legal expertise.",
           },
         },
         {
           "@type": "Question",
-          name: "Does KIEY VERSE offer barter services?",
+          name: "Why choose KIEYVERSE?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes, KIEY VERSE offers a barter services model that allows service exchange instead of payments, providing limited manpower and digital marketing support for mutual growth — ideal for early-stage startups and collaborative ventures.",
+            text: "KIEYVERSE offers a faster hiring process, affordable pricing, proven lead generation strategies, and end-to-end business growth support.",
           },
         },
         {
@@ -251,7 +266,7 @@ const jsonLd = {
           name: "How can I contact KIEY VERSE?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You can reach KIEY VERSE via email at kieyverse@gmail.com, visit their website at kieyverse.in, or connect on LinkedIn at KIEY VERSE HQ.",
+            text: "You can reach KIEY VERSE via email at kieyverse@gmail.com, visit their website at kieyverse.in, connect on LinkedIn at KIEY VERSE HQ, or follow on Instagram @kieyverse.hq.",
           },
         },
       ],
@@ -267,7 +282,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* JSON-LD structured data — static trusted content, safe to inject */}
+        {/* JSON-LD structured data – static trusted content, safe to inject */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

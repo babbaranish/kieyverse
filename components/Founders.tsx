@@ -72,12 +72,12 @@ export default function Founders() {
             <p className="text-white/70 leading-relaxed text-lg">
               KIEY VERSE was founded by two passionate women entrepreneurs from different states of India.
               As former colleagues with a shared vision, they aspired to build something meaningful and impactful.
-              Their aligned mindset and dedication to excellence led to the creation of KIEY VERSE — a company
+              Their aligned mindset and dedication to excellence led to the creation of KIEY VERSE – a company
               driven by ambition, integrity, and the desire to support businesses across industries.
             </p>
             <p className="mt-4 text-white/70 leading-relaxed text-lg">
               Together, they bring diverse experiences, strong leadership, and a deep understanding of what
-              today&apos;s businesses truly need — with close to{' '}
+              today&apos;s businesses truly need – with close to{' '}
               <span className="text-kv-yellow font-semibold">10 years of combined experience</span> in
               Social Media Marketing, SEO, HR, and Legal expertise.
             </p>

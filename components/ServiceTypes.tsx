@@ -10,7 +10,7 @@ const serviceTypes = [
     icon: CreditCard,
     label: 'Direct Paid Services',
     tagline: 'Full-Scale Solutions',
-    description: 'Our paid services cover manpower supply, digital marketing, branding, SEO/SEM, web development, content, campaigns, and consultations — delivering tailored, priority support for every client.',
+    description: 'Our paid services cover manpower supply, digital marketing, branding, SEO/SEM, web development, content, campaigns, and consultations – delivering tailored, priority support for every client.',
     features: [
       'Manpower Supply & Staffing',
       'Full-stack Digital Marketing',
@@ -27,7 +27,7 @@ const serviceTypes = [
     icon: ArrowLeftRight,
     label: 'Barter Services',
     tagline: 'Mutual Growth',
-    description: 'This model allows service exchange instead of payments, offering limited manpower and digital marketing support for mutual growth — ideal for early-stage startups and collaborative ventures.',
+    description: 'This model allows service exchange instead of payments, offering limited manpower and digital marketing support for mutual growth – ideal for early-stage startups and collaborative ventures.',
     features: [
       'Service Exchange Model',
       'Limited Manpower Support',

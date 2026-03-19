@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowDown, Sparkles } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -34,7 +35,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-24 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-          {/* Left — Content */}
+          {/* Left – Content */}
           <div className="max-w-2xl">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -44,7 +45,7 @@ export default function Hero() {
             >
               <Sparkles className="w-4 h-4 text-kv-yellow" />
               <span className="text-sm font-medium text-kv-yellow tracking-wider uppercase">
-                Talent & Digital Growth Partner
+                Manpower & Digital Growth Partner
               </span>
             </motion.div>
 
@@ -59,7 +60,7 @@ export default function Hero() {
                 <span className="relative z-10">Businesses</span>
                 <span className="absolute bottom-2 left-0 w-full h-3 bg-kv-yellow/30 -skew-x-3" />
               </span>{' '}
-              with Talent &{' '}
+              with Manpower &{' '}
               <span className="text-kv-yellow">Digital Growth</span>
             </motion.h1>
 
@@ -96,7 +97,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right — Abstract visual */}
+          {/* Right – Abstract visual with logo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -125,15 +126,9 @@ export default function Hero() {
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-kv-yellow/10 rounded-2xl backdrop-blur-sm border border-kv-yellow/20"
               />
 
-              {/* Center logo mark */}
+              {/* Center logo */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="font-[var(--font-display)] text-5xl font-extrabold">
-                    <span className="logo-kiey">K</span>
-                    <span className="logo-verse">V</span>
-                  </div>
-                  <div className="mt-1 w-8 h-0.5 bg-kv-yellow mx-auto" />
-                </div>
+                <Image src="/logo.png" alt="KIEY VERSE" width={140} height={56} className="h-16 w-auto" />
               </div>
 
               {/* Orbiting dots */}

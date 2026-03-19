@@ -1,28 +1,48 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Users, Megaphone, Briefcase, GraduationCap } from 'lucide-react';
+import { Users, Megaphone, GraduationCap, Briefcase } from 'lucide-react';
 
 const services = [
   {
     icon: Users,
-    title: 'Skilled Talent Supply',
-    description: 'Pre-vetted talent across IT, Non-IT, and creative roles to help companies scale smoothly.',
+    title: 'Recruitment Services',
+    points: [
+      'Fast hiring for IT & Non-IT roles',
+      'Pre-screened and ready-to-work candidates',
+      'Cost-effective hiring solutions',
+      'Bulk hiring support',
+    ],
   },
   {
     icon: Megaphone,
-    title: 'Digital Marketing',
-    description: 'Complete digital marketing: SMM, paid ads, SEO, content writing, copywriting, and brand growth strategies.',
-  },
-  {
-    icon: Briefcase,
-    title: 'Business Consultation',
-    description: 'Strategy, recruitment, branding, and digital transformation support.',
+    title: 'Digital Marketing Services',
+    points: [
+      'Lead generation campaigns',
+      'Social media marketing',
+      'Performance ads (Meta, Google)',
+      'SEO optimization',
+      'Website Development',
+    ],
   },
   {
     icon: GraduationCap,
-    title: 'Digital Learning',
-    description: 'Practical digital courses that enhance skills and industry-ready knowledge.',
+    title: 'Skill Development Programs',
+    points: [
+      'Industry-ready training',
+      'Placement-focused courses',
+      'Practical learning approach',
+    ],
+  },
+  {
+    icon: Briefcase,
+    title: 'Business Consultation Services',
+    points: [
+      'Expert guidance to grow your business step by step',
+      'Help in hiring, marketing, and overall planning',
+      'Simple strategies to improve sales and leads',
+      'Support for startups and growing businesses',
+    ],
   },
 ];
 
@@ -44,7 +64,7 @@ export default function CoreServices() {
             What We Do
           </span>
           <h2 className="mt-3 font-[var(--font-display)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-kv-black">
-            Our Core{' '}
+            Our{' '}
             <span className="relative inline-block">
               Services
               <span className="absolute -bottom-1 left-0 w-full h-1.5 bg-kv-yellow" />
@@ -52,7 +72,7 @@ export default function CoreServices() {
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {services.map((service, i) => (
             <motion.div
               key={service.title}
@@ -68,15 +88,20 @@ export default function CoreServices() {
               <div className="absolute inset-0 border-2 border-transparent group-hover:border-kv-yellow/30 rounded-2xl transition-colors duration-500" />
 
               <div className="relative z-10">
-                <div className="w-14 h-14 bg-kv-yellow/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-kv-yellow/20 transition-colors duration-500">
+                <div className="w-14 h-14 bg-kv-yellow/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-kv-yellow/20 transition-colors duration-500">
                   <service.icon className="w-7 h-7 text-kv-yellow" />
                 </div>
-                <h3 className="font-[var(--font-display)] text-xl font-bold text-white mb-3">
+                <h3 className="font-[var(--font-display)] text-xl font-bold text-white mb-4">
                   {service.title}
                 </h3>
-                <p className="text-white/60 leading-relaxed text-sm">
-                  {service.description}
-                </p>
+                <ul className="space-y-2">
+                  {service.points.map((point) => (
+                    <li key={point} className="flex items-start gap-2 text-white/60 text-sm leading-relaxed">
+                      <span className="mt-1.5 w-1.5 h-1.5 bg-kv-yellow rounded-full flex-shrink-0" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               {/* Corner accent */}
