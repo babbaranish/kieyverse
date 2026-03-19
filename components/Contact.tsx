@@ -73,7 +73,7 @@ export default function Contact() {
 
             <div className="space-y-6">
               <a
-                href="mailto:kieyverse@gmail.com"
+                href="mailto:anishbabbar1@gmail.com"
                 className="group flex items-center gap-4 p-4 bg-white rounded-xl border border-kv-black/5 hover:border-kv-yellow/40 hover:shadow-lg hover:shadow-kv-yellow/5 transition-all duration-300"
               >
                 <div className="w-12 h-12 bg-kv-yellow/10 rounded-xl flex items-center justify-center group-hover:bg-kv-yellow transition-colors duration-300">
@@ -81,7 +81,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-kv-black/40 font-medium uppercase tracking-wider">Email</p>
-                  <p className="font-[var(--font-display)] font-bold text-kv-black">kieyverse@gmail.com</p>
+                  <p className="font-[var(--font-display)] font-bold text-kv-black">anishbabbar1@gmail.com</p>
                 </div>
               </a>
 
