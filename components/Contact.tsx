@@ -53,7 +53,7 @@ export default function Contact() {
           </span>
           <h2 className="mt-3 font-[var(--font-display)] text-3xl sm:text-4xl lg:text-5xl font-extrabold text-kv-black">
             Connect{' '}
-            <span className="text-kv-yellow">with Us</span>
+            <span className="text-kv-yellow">With Us</span>
           </h2>
         </motion.div>
 

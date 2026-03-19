@@ -1,11 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { User } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
+import Image from 'next/image';
 
 const founders = [
-  { name: 'Vijayalakshmi', title: 'Co-Founder' },
-  { name: 'Easwary', title: 'Co-Founder' },
+  { name: 'Vijayalakshmi', title: 'Cofounder & CEO', image: '/vijay.png' },
+  { name: 'Easwary', title: 'Cofounder & COO', image: '/easwar.png' },
 ];
 
 export default function Founders() {
@@ -32,7 +33,7 @@ export default function Founders() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-10 max-w-3xl mx-auto">
           {founders.map((founder, i) => (
             <motion.div
               key={founder.name}
@@ -40,21 +41,48 @@ export default function Founders() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.7, delay: i * 0.2 }}
-              whileHover={{ y: -5 }}
-              className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:border-kv-yellow/30 transition-all duration-500"
+              whileHover={{ y: -8 }}
+              className="group relative"
             >
-              {/* Avatar placeholder */}
-              <div className="mx-auto w-28 h-28 rounded-full bg-gradient-to-br from-kv-purple to-kv-purple/50 ring-4 ring-kv-purple/30 group-hover:ring-kv-yellow/40 transition-all duration-500 flex items-center justify-center mb-6">
-                <User className="w-12 h-12 text-white/70" />
+              {/* Card container */}
+              <div className="relative rounded-3xl shadow-2xl shadow-black/30 group-hover:shadow-kv-yellow/10 transition-shadow duration-500">
+                {/* Warm pastel photo background */}
+                <div className="relative h-96 overflow-hidden rounded-3xl bg-kv-dark">
+                  <Image
+                    src={founder.image}
+                    alt={founder.name}
+                    width={400}
+                    height={600}
+                    className="w-full h-full object-cover object-[center_20%]"
+                    priority
+                  />
+                </div>
+
               </div>
-              <h3 className="font-[var(--font-display)] text-2xl font-bold text-white">
-                {founder.name}
-              </h3>
-              <div className="mt-2 inline-block px-4 py-1 bg-kv-yellow text-kv-black text-xs font-bold rounded-full uppercase tracking-wider">
-                {founder.title}
+
+              {/* Floating glass card overlapping photo */}
+              <div className="relative -mt-12 mx-4 mb-2 bg-white/[0.06] backdrop-blur-2xl border border-white/15 rounded-2xl p-5 text-center shadow-xl shadow-black/20">
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/[0.08] to-transparent pointer-events-none" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-px bg-gradient-to-r from-transparent via-kv-yellow/60 to-transparent" />
+
+                <h3 className="relative font-[var(--font-display)] text-xl font-bold text-white">
+                  {founder.name}
+                </h3>
+                <p className="relative mt-1 text-white/50 text-sm font-medium">
+                  {founder.title}
+                </p>
+                <a
+                  href="https://www.linkedin.com/company/kiey-verse/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative inline-flex mt-3 w-9 h-9 bg-blue-600 rounded-xl items-center justify-center text-white hover:bg-blue-500 hover:scale-110 transition-all duration-300 shadow-lg shadow-blue-600/30"
+                >
+                  <Linkedin className="w-4 h-4" />
+                </a>
               </div>
-              {/* Accent corner */}
-              <div className="absolute top-4 right-4 w-3 h-3 bg-kv-yellow/30 rounded-full group-hover:bg-kv-yellow transition-colors duration-500" />
+
+              {/* Glow effect on hover */}
+              <div className="absolute -inset-1 bg-gradient-to-b from-kv-yellow/0 to-kv-yellow/0 group-hover:from-kv-yellow/5 group-hover:to-transparent rounded-3xl transition-all duration-500 -z-10 blur-xl" />
             </motion.div>
           ))}
         </div>
